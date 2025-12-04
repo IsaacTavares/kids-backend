@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
     host: process.env.DB_HOST || 'localhost',
     user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || '1234', // Pon aquí tu pass local por si pruebas en PC
+    password: process.env.DB_PASSWORD || '1234', 
     database: process.env.DB_NAME || 'kidslearning_db',
     port: process.env.DB_PORT || 3306
 });
